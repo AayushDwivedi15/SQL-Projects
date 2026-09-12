@@ -1,9 +1,5 @@
---select * from customers
---select * from [orders ]
---select * from [products ]
 
-
-
+-- using cte to create a temporary environment
 
 with cte as (select customers.city as city_name,[products ].category as category_name,
 sum([orders ].quantity*[products ].price) as total_revenue
