@@ -13,6 +13,8 @@ inner join [products ] on
 [orders ].product_id = [products ].product_id
 group by city,category),
 
+
+-- using window function to identify the rank of category on the basis of revenue   
 cte2 as ( select *, DENSE_RANK() over(partition by city_name order by total_revenue desc) as rank_ from cte)
 
 select * from cte2
