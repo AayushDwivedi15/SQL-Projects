@@ -27,6 +27,7 @@ Welcome to my SQL Projects directory! This repository contains a collection of d
   * `egg_production.csv`: Fact table covering multi-decade commercial egg production figures.
   * `yogurt_production.csv`: Fact table detailing regional yogurt manufacturing output.
   * `coffee_production.csv`: Fact table capturing specialized domestic coffee production trends.
+
  #3. E-Commerce Analytics: Revenue, Risk, & Customer Segmentation
 
 * **Description:** comprehensive relational database project analyzing payment method risks, regional inventory optimization, and customer lifetime value.
