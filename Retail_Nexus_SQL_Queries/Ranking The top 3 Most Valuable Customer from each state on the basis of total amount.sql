@@ -8,7 +8,9 @@ FROM
 WHERE
     Total_Amount > 0)
 
-select customers.State,Customer_Spent.Customer_Name,(customers.ï»¿Customer_ID) AS CustomerID ,Customer_Spent.Total_Amount,dense_rank() over(partition by customers.State order by Customer_Spent.Total_Amount desc) as Customer_Rank
+select customers.State,
+        Customer_Spent.Customer_Name,(customers.ï»¿Customer_ID) AS CustomerID ,
+        Customer_Spent.Total_Amount,dense_rank() over(partition by customers.State order by Customer_Spent.Total_Amount desc) as Customer_Rank
 from Customer_Spent left join 
 customers on customers.Customer_Name = Customer_Spent.Customer_Name;
 
